@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Channel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="tv.png" alt="TV" class="tv-image">
+        <video class="tv-static" autoplay loop muted>
+            <source src="static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="input-container">
+            <label for="code-input">Enter a channel:</label>
+            <input type="text" id="code-input" placeholder="e.g., 1234">
+            <button onclick="checkCode()">Submit</button>
+        </div>
+        <p id="result-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
